@@ -1,0 +1,313 @@
+#divtop{position: fixed; top: 0px; left: 0px; height: 100px; width:100%; z-index: 20; background-color: white;}
+
+#kiitcart{position: fixed;left: 60px;height: 105px;width: 180px;z-index: 50;top: -25px;}
+
+
+#cart{position: fixed;left: 1140px;height: 28px;width: 35px;z-index: 50;top: 16px;}
+
+
+#carttext{position:fixed; font-family: Arial; font-size: 28px; top:-32px; left:1176px;color: black; z-index:50;}
+
+
+#searchicon{position: fixed;left: 872px;height: 28px;width: 32px;z-index: 50;top: 15px;}
+
+
+#searchbar{position: fixed;font-size:16px; left: 360px; height: 35px; width: 500px; border-radius: 45px; z-index: 50; top:10px; font-family: Verdana;font-family: Comic Sans MS; }
+
+
+#divmiddle{position: fixed; top: 80px; height: 50px; width:100%;left:0px; z-index: 20; background-color: black}
+
+
+/*this is style for navigation bar*/
+.dropdown-home{float: left; position: fixed;left: 230px;top: 87px;list-style-type: none;margin: 0;padding: 0;height: 65px;font-size: 17px;z-index: 50;}
+.dropdown-writing{float: left; position: fixed;left: 350px;top: 87px;list-style-type: none;margin: 0;padding: 0;height: 65px;font-size: 17px;z-index: 50;}
+.dropdown-desk{float: left; position: fixed;left: 550px;top: 87px;list-style-type: none;margin: 0;padding: 0;height: 65px;font-size: 17px;z-index: 50;}
+.dropdown-art{float: left; position: fixed;left: 725px;top: 87px;list-style-type: none;margin: 0;padding: 0;height: 65px;font-size: 17px;z-index: 50;}
+.dropdown-files{float: left; position: fixed;left: 905px;top: 87px;list-style-type: none;margin: 0;padding: 0;height: 65px;font-size: 17px;z-index: 50;}
+
+
+#navigation1,#navigation2,#navigation3,#navigation4,#navigation5
+{border:none;outline:none;color:white;padding: 5px 8px;background-color: #e67300;border-radius:6px;font-family: inherit;font-size: 23px;margin: 0;z-index:50;list-style-type: none;}
+
+
+#navigation1:hover,#navigation2:hover,#navigation3:hover,#navigation4:hover,#navigation5:hover
+{color: white;cursor: pointer;background-color: #e67300;border-radius: 5px;transition-duration:0.6s;list-style-type: none;}
+
+
+.dropdown-content{display:none;position: absolute;background-color: white; top:43px; min-width: 140px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 50;list-style-type: none;}
+.dropdown-content a{color: black;padding: 12px 16px;display: block;font-size:18px;font-family:inherit;text-decoration: none;}
+.dropdown-content a:hover {background-color: #cccccc;list-style-type: none;}
+
+
+
+.dropdown-home:hover .dropdown-content{display: block;}
+.dropdown-writing:hover .dropdown-content{display: block;}
+.dropdown-desk:hover .dropdown-content {display: block;}
+.dropdown-art:hover .dropdown-content {display: block;}
+.dropdown-files:hover .dropdown-content {display: block;}
+
+
+.sidenav {height: 100%;width:0;position: fixed;z-index: 70;top: 0;left: 0;background-color: #111;overflow-x: hidden;transition: 0.5s;padding-top: 70px;}
+.sidenav a {padding-top:3px; margin-top:60px; text-align: center;text-decoration: none;font-size: 28px;color: #818181;display: block;transition: 0.4s;font-family: Arial Rounded MT Bold;}
+.sidenav a:hover {color: #f1f1f1;}
+.openbtn{position:fixed; font-size:33px;cursor:pointer; margin-left:20px;color:azure;background-color: #111;z-index:50}
+.sidenav .closebtn {position: absolute;top: -45px;left: 210px;font-size: 45px;margin-left: 50px; z-index:500;}
+
+
+@media screen and (max-height: 450px;)
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+ 
+@keyframes slider
+{
+0%{left: 0;}
+20%{left: 0;}
+25%{left: -100%;}
+45%{left: -100%;}
+50%{left: -200%;}
+70%{left: -200%;}
+75%{left: -300%;}
+95%{left: -300%;}
+100%{left: -400%;}
+}
+
+
+#slideshow {overflow: hidden; position:absolute; left:12px; top:135px; height:400px; width:1240px;z-index:2;}
+#slideshow figure img {position:relative; width: 20%;float: left;z-index:2;}
+#slideshow figure {position: absolute;width: 500%;margin: 0;left: 0;text-align: left;font-size: 0;animation: 30s slider infinite;z-index:2;}
+
+
+.prev, .next 
+{
+cursor: pointer;position: absolute;top: 50%;width: auto;margin-top: -10px;padding: 16px;color: white;font-weight: bold;font-size: 24px;transition: 0.6s ease;user-select: default; z-index:5;
+background-color:white;color: black; }
+.next{right:11.4px;border-radius: 3px 0 0 3px;z-index:5}
+.prev{left:12px;border-radius: 0 3px 3px 0; z-index:5}
+.prev:hover, .next:hover {transition-duration:0.2;z-index:5}
+
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	button{top:0px; left:100px;}
+
+.container{
+		width: 99%;
+		padding: 5px;
+		height: 400px;
+		
+		margin: 58px auto;
+		background:white;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+.container2{
+	width: 99%;
+	padding:5px;
+	height: 450px;
+	
+	margin: -60px 58px 58px 1px;
+	/*margin: 58px auto;*/
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.container3{
+	width: 99%;
+	padding:5px;
+	height: 450px;
+	
+	margin: -90px 58px 58px 1px;
+	/*margin: 58px auto;*/
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.container4{
+	width: 99%;
+	padding:5px;
+	height: 450px;
+	
+	margin: -90px 58px 58px 1px;
+	/*margin: 58px auto;*/
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.container5{
+	width: 99%;
+	padding:5px;
+	height: 430px;
+	
+	margin: -90px 58px 58px 1px;
+	/*margin: 58px auto;*/
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+	.box1{
+		text-indent:25%;margin-top:10px;font-size:18px;
+	}
+
+	.box{
+		width: 235px;
+		height: 385px;
+		background: whitesmoke;
+		border: 0.8px; border-style: solid;
+		left:0px;
+    margin: 10px 10px;
+	transition: 1s;
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    
+	}
+
+	
+	.box2{
+		width: 235px;
+		height: 385px;
+		background: whitesmoke;
+		border: 0.8px; border-style: solid;
+		left:0px;
+    margin: 30px 10px;
+	transition: 1s;
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    
+	}
+	.box:hover,.box2:hover{
+		transform: scale(1.05);
+		background:whitesmoke;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+		
+	}
+	.button{
+		font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+		font-size: 16px;
+	}
+	#addcart1{position :absolute; height:34px; width:130px; margin-top:-18px;}
+	footer
+	{
+		background-color:black;
+		color: #aba8a8;
+		height: 50vh;
+		margin-top: -57px;
+	
+	}
+	.footer-widget{
+		background-color:black;
+		margin-left:5px;
+	
+	}
+
+	.footer1
+	{
+		margin-right: 860px;
+		margin-left:  -1px;
+		
+		
+		
+		
+	}
+	.footer2
+	{
+		margin-right: 500px;
+		margin-left: 300px;
+		margin-top:-232px;
+		
+		
+	}
+	.footer3
+	{
+		margin-right: 100px;
+		margin-left: 510px;
+		margin-top:-217px;
+		
+		
+	}
+	.footer4
+	{
+		margin-right: 10px;
+		margin-left: 840px;
+		margin-top:-247px;
+		
+		
+	}
+	.widget-title
+	{
+		color: #fff;
+		margin-bottom: 50px;
+		left: 1px;
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+	
+	.about-widget p
+	{
+		line-height: 20px;
+		margin: 10px 0 30px 0;
+	}
+	.cards i  
+	{
+		display: inline-block;
+		font-size: 30px;
+		margin-right: 12px;
+	}
+	.about-widget p span
+	{
+		margin-right: 10px;
+	}
+	.categories-widget, .information-widget
+	{
+		margin-left: 60px;
+	}
+	.footer-widget ul
+	{
+		margin-left: 20px;
+	}
+	.footer-widget ul li
+	{
+		padding-bottom: 14px;
+	}
+	.footer-widget ul li a
+	{
+		color: #aba8a8;
+		text-decoration: none;
+	}
+	.footer-widget ul li a:hover
+	{
+		color: #d2d2d2;
+		margin-left: 10px;
+		transition: all .5s ease;
+	}
+	.contact-address
+	{
+		padding-bottom: 20px;
+		
+		line-height: 20px;
+	}
+	.contact-number
+	{
+		margin: 10px;
+	}
+	.contact-email{
+		margin-top:7px;
+		margin-left:-2px;
+	}
