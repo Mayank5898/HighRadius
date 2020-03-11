@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KiitCart.com</title>
+  <link rel="stylesheet" href="Kiitcart.css"> 
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="bdr1">
+  <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+<div id="divtop"></div>
+<a href="Kiitcart.html"><img src="Kiit cart.png" id="kiitcart"></img></a>
+<a href=""><img src="Cart.png" id="cart"></img></a>
+<a href=""><img src="Search icon.png" id="searchicon"></img></a>
+<a href=""><h5 id="carttext">Cart</h5></a>
+
+<div id="divmiddle"></div>
+
+<form> 
+<input type="text" name="Search"  placeholder="Search your items here" id="searchbar" style="text-align: center;" >
+</form>
+
+<!--dropdown -->
+
+<div class="container-fluid">
+  
+      <div class="dropdown-home">
+      <a href="Kiitcart.html"><button  id="navigation1">Home</button></a>
+      </div>
+      
+	  <div class="dropdown-writing">
+      <a href=""><button id="navigation2">WritingItems </button></a>
+      <div class="dropdown-content">
+        <a href="#">Ball Pens</a>
+        <a href="#">Pocket Diaries</a>
+        <a href="#">Notebooks</a>
+		<a href="#">Markers</a>
+		<a href="#">Graph Books</a>
+		<a href="#">Pencils</a>
+		<a href="#">A4 Sheets</a>
+		<a href="Gel Pens.html">Gel Pens</a>
+	
+      </div>
+    </div>
+     
+
+	  <div class="dropdown-art">
+      <button id="navigation4">Art&Craft</button>&emsp;&emsp;&emsp;
+      <div class="dropdown-content">
+        <a href="Drawing Books.html">Drawing Books</a>
+        <a href="#">Paint Brushes</a>
+        <a href="#">Wax Crayons</a>
+		<a href="#">Sketch Pens</a>
+		<a href="#">Colour Papers</a>
+		<a href="#">Glitters</a>
+		<a href="#">Stencils</a>
+		<a href="#">Poster Paints</a>
+	  </div></div>
+	  
+	  	 <div class="dropdown-desk">
+      <button id="navigation3">DeskItems</button>&emsp;&emsp;&emsp;
+      <div class="dropdown-content">
+        <a href="#">Art Glues</a>
+        <a href="#">Clipboards</a>
+		<a href="#">Scissors</a>
+		<a href="#">Paper Weight</a>
+		<a href="#">Pen Holders</a>
+		<a href="#">Sticky Notes</a>
+		<a href="#">Tapes</a>
+      </div></div>
+	  
+      
+	  <div class="dropdown-files">
+      <button id="navigation5">Files</button>&emsp;&emsp;
+      <div class="dropdown-content">
+        <a href="#">Flat Files</a>
+        <a href="#">Pocket Files</a>
+        <a href="#">Portfolio Files</a>
+		<a href="#">Arch Files</a>
+      </div></div>
+      
+        
+        
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">My Account</a>
+  <a href="#">My Orders</a>
+  <a href="#">About us</a>
+  <a href="#">Follow us</a>
+  <a href="#">Log out</a>
+</div>
+
+<br><br><br>
+<span class="openbtn" onclick="openNav()">&#9776; </span>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "320px";
+    
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>  
+</div>
+  </div></div>
+  
+
+<div class="container-fluid">
+  <div id="myslideshow" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="1000">
+              <img src="image6.jpg" class="d-block w-100 bdr">
+          </div>
+          
+          <div class="carousel-item" data-interval="2000">
+              <img src="image5.jpg" class="d-block w-100 bdr" >
+          </div>
+          <div class="carousel-item " data-interval="2000">
+              <img src="image3.jpg" class="d-block w-100 bdr">
+          </div>
+          <div class="carousel-item" data-interval="2000">
+              <img src="image4.jpg" class="d-block w-100 bdr">
+          </div>
+
+      </div>
+      
+      <ol class="carousel-indicators">
+          <li data-target="#myslideshow" data-slide-to="0" class="active"></li>
+          <li data-target="#myslideshow" data-slide-to="1"></li>
+          <li data-target="#myslideshow" data-slide-to="2"></li>
+          <li data-target="#myslideshow" data-slide-to="3"></li>
+        </ol>
+      <a href="#myslideshow" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"><</span>
+      <span class="sr-only">Previous</span></a>
+      
+      <a href="#myslideshow" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"><</span>
+          <span class="sr-only">Next</span></a>
+  </div>
+</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js.js"></script>    
+
+
+
+
+<!--<div  id="trendingdiv">-->
+  <div class="container-fluid cbox">
+    <br>
+    <h4>Trending Offers</h4>
+      <hr class="line1">
+    <div class="row arow">
+      
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="hitem1.jpeg" id="imagesize"></img><h6 id="hitem1text">Gel Pens</h6><a href=""><h6 id="hitem1dis">Extra 10% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="hitem2.jpeg" id="imagesize"></img><h6 id="hitem2text">Pencils</h6><h6 id="hitem2dis">Extra 20% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="hitem3.jpeg"  id="imagesize"></img><h6 id="hitem3text">Notebooks</h6><h6 id="hitem3dis">Extra 5% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="hitem4.jpeg" id="imagesize"></img><h6 id="hitem4text">Oil Pastels</h6><h6 id="hitem4dis">Extra 10% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="hitem5.jpeg" id="imagesize"></img><h6 id="hitem5text">Markers</h6><h6 id="hitem5dis">Extra 5% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol" >
+        <a href=""><img src="hitem6.jpeg" id="imagesize"></img><h6 id="hitem6text">Paint Brushes</h6><h6 id="hitem6dis">Extra 10% Off</h6></a></div>
+    </div>
+  </div>
+
+<!-- advertisement 1-->
+<div class="container-fluid cbox1">
+  
+  <div class="row arow">
+    
+    <div class="col-xl-6 col-sm-12 acol"><a href="Art & Craft.html"><img src="advert1.jpg" id="advert1"></img></a></div>
+    <div class="col-xl-6 col-sm-12 acol" >
+      <a href="Adhesives & Glues.html"><img src="advert2.jpg" id="advert2"></img></a></div>
+  </div>
+</div>
+
+
+<!--BESTSELLER -->
+  <div class="container-fluid cbox">
+    <br>
+    <h4>Bestselers</h4>
+      <hr class="line1">
+    <div class="row arow">
+      
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="pitem1.jpeg" id="imagesize"></img><h6 id="pitem1text">Classmate Notebooks</h6><a href=""><h6 id="pitem1dis">Extra 22% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="pitem2.jpeg" id="imagesize"></img><h6 id="pitem2text">Memo Pads</h6><h6 id="pitem2dis">Extra 18% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="pitem3.jpeg"  id="imagesize"></img><h6 id="pitem3text">Faber-Castell Brushes</h6><h6 id="pitem3dis">Extra 15% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="pitem4.jpeg" id="imagesize"></img><h6 id="pitem4text">Pilot Pens</h6><h6 id="pitem4dis">Extra 32% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol"><a href=""><img src="pitem5.jpeg" id="imagesize"></img><h6 id="pitem5text">A4 Size Papers</h6><h6 id="pitem5dis">Extra 18% Off</h6></a></div>
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 acol" >
+        <a href=""><img src="hitem6.jpeg" id="imagesize"></img><h6 id="hitem6text">Paint Brushes</h6><h6 id="hitem6dis">Extra 10% Off</h6></a></div>
+    </div>
+  </div>
+
+
+<!-- advertisement 2-->
+<div class="container-fluid cbox1">
+  
+  <div class="row arow">
+    
+    <div class="col-xl-6 col-sm-12 acol"><a href="Paper Products.html"><img src="advert3.jpg" id="advert1"></img></a></div>
+    <div class="col-xl-6 col-sm-12 acol" >
+      <a href="Writing Items.html"><img src="advert4.jpg" id="advert2"></img></a></div>
+  </div>
+</div>
+<footer>
+  <div class="footer1">
+      
+              <div class="footer-widget about-widget">
+                  <h2 class="widget-title">About Us</h2>
+                  <p>Your all in one destination for all your stationary needs"kiitCart"</p>
+                  <div class="cards">
+                  <i class="fab fa-cc-mastercard"></i>
+                  <i class="fab fa-cc-amex"></i>
+                  <i class="fab fa-cc-visa"></i>
+                  </div>
+                  <p><span><i class="fas fa-lock"></i></span>Secure Online Payment</p>
+              </div>
+          </div>
+        
+          <div class="footer2">
+                  <div class="footer-widget categories-widget">
+                  <h2 class="widget-title">Categories</h2>
+                  <ul>
+                    <li><a href="Writing Items.html">Writing Items</a></li>
+                    <li><a href="Desk Items.html">Desk Items</a></li>
+                    <li><a href="Art & Craft.html">Art & Craft</a></li>
+                    <li><a href="Files.html">Files</a></li>
+                  </ul>
+          </div>
+      </div>
+           <div class="footer3">
+                  <div class="footer-widget information-widget">
+                  <h2 class="widget-title">Informations</h2>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Return & Exchange</a></li>
+                      <li><a href="#">Shipping & Delivery</a></li>
+                      <li><a href="#">Private Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+          
+<div class="footer4">
+<div class="footer-widget">
+<h2 class="widget-title">Contact Us</h2>
+<div class="contact-address">
+<i class="fas fa-map-marker-alt"></i>Address: KP-6 Campus-15,Patia,BBSR,Pincode:751024
+</div>
+<div class="contact number">
+  <i class="fas fa-phone-square-alt"></i>Phone:+91 1234567890
+</div>
+<div class="contact-email">
+      <i class="fas fa-envelope"></i>Email:contact@kiitcart.com
+  </div>
+  
+</div>
+</div>
+
+</body>
+</html>
+
