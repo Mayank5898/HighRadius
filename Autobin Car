@@ -1,0 +1,72 @@
+#define BLYNK_PRINT Serial
+
+#include<ESP8266WiFi.h>
+
+#include<BlynkSimpleEsp8266.h>
+
+char auth[]="GFCryn23fmm7anQCzeOl7r2AXfrILJVn";
+char ssid[]="wifi";
+char pass[]="12345678";
+
+
+void setup() {
+  Serial.begin(9600);
+  Blynk.begin(auth,ssid,pass);
+  Blynk.syncAll();
+  pinMode(D7,OUTPUT);
+  pinMode(D8,OUTPUT);
+  pinMode(D1,OUTPUT);
+  pinMode(D2,OUTPUT);
+
+}
+BLYNK_WRITE(V3)
+{
+  int x=param[0].asInt();
+  int y=param[1].asInt();
+ 
+  Serial.println(x);
+  Serial.println(y);
+
+  if(y>900){
+  Serial.println("forward");
+  digitalWrite(D7,HIGH);
+  digitalWrite(D8,LOW);
+  digitalWrite(D2,HIGH);
+  digitalWrite(D1,LOW);
+  }
+  else if(y<200){
+  Serial.println("reverse");
+   digitalWrite(D7,LOW);
+  digitalWrite(D8,HIGH);
+  digitalWrite(D2,LOW);
+  digitalWrite(D1,HIGH);
+  }
+  else if(x>900){
+  Serial.println("Right"); 
+   digitalWrite(D7,HIGH);
+  digitalWrite(D8,LOW);
+  digitalWrite(D2,LOW);
+  digitalWrite(D1,LOW);
+  }
+  else if(x<200){
+  Serial.println("left");
+  digitalWrite(D7,LOW);
+  digitalWrite(D8,LOW);
+  digitalWrite(D2,HIGH);
+  digitalWrite(D1,LOW);
+  }
+  else{
+  Serial.println("stop");
+  digitalWrite(D7,LOW);
+  digitalWrite(D8,LOW);
+  digitalWrite(D2,LOW);
+  digitalWrite(D1,LOW);
+  }
+  
+ 
+  
+}
+
+void loop() {
+  Blynk.run();
+}
